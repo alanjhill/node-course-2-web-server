@@ -53,6 +53,13 @@ app.get('/about', (request, response) => {
   });
 });
 
+// Projects
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 // Bad
 app.get('/bad', (request, response) => {
   response.send({
